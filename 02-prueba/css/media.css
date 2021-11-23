@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #3e689b;
+  --secundary-color: #acc5df;
+  --terciary-color: #cbdaeb;
+  --footer-color: #242415;
+  --color: #fff;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* TABLET PORTRAIT */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 55%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main section:nth-child(1) {
+    width: 100%;
+  }
+  .main section:nth-child(2),
+  .main section:nth-child(3) {
+    width: 100%;
+  }
+}
+/* PHONE  */
+@media only screen and (max-width: 37.5em) {
+  .container > * {
+    margin: 0px 3rem;
+  }
+}

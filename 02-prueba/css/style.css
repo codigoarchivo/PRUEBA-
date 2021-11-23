@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #3e689b;
+  --secundary-color: #acc5df;
+  --terciary-color: #cbdaeb;
+  --footer-color: #242415;
+  --color: #fff;
+}
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+hr {
+  border: solid 1px;
+}
+.container {
+  max-width: 114rem;
+  margin: 0px auto;
+}
+.container > * {
+  margin: 0px 10rem;
+}
+.layout {
+  border: solid 1px var(--primary-color);
+}
+.header {
+  background-color: var(--primary-color);
+  color: var(--color);
+  padding: 2.5rem;
+}
+.header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.main {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.aside {
+  border-right: solid 1px var(--primary-color);
+  height: 100%;
+  padding-top: 3rem;
+}
+.aside ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.aside ul li {
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.main section:nth-child(1) {
+  padding: 1rem 1rem 2rem 2rem;
+  width: 25%;
+}
+.main section:nth-child(2),
+.main section:nth-child(3) {
+  width: 40%;
+}
+.main section:nth-child(2),
+.main section:nth-child(3) {
+  padding: 0px 1.5rem;
+}
+.main section:nth-child(2) .box {
+  background-color: var(--secundary-color);
+  color: var(--color);
+}
+.main section:nth-child(3) .box {
+  background-color: var(--terciary-color);
+  color: var(--color);
+}
+.main section:nth-child(2) .box,
+.main section:nth-child(3) .box {
+  height: 90%;
+  margin-bottom: 3rem;
+  padding: 0 1rem 2rem 1rem;
+  overflow: inherit;
+}
+.main section:nth-child(2) h1,
+.main section:nth-child(3) h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 1.2rem;
+  text-transform: uppercase;
+}
+
+.main section:nth-child(2) p,
+.main section:nth-child(3) p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0 1rem;
+  text-align: justify;
+  margin: 1.6rem auto;
+}
+.footer {
+  background-color: var(--footer-color);
+  bottom: 0;
+  color: var(--color);
+  font-size: 1.6rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: absolute;
+  height: 9rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
